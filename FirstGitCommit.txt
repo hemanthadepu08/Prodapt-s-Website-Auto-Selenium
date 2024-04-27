@@ -1,0 +1,72 @@
+Microsoft Windows [Version 10.0.19045.4291]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\hemanth.a>git config --global user.name "hemanth"
+
+C:\Users\hemanth.a>git config --global user.email hemanthadepu08@gmail.com
+
+C:\Users\hemanth.a>git init
+Initialized empty Git repository in C:/Users/hemanth.a/.git/
+
+C:\Users\hemanth.a>git add C:\Users\hemanth.a\Desktop\Github use.txt
+fatal: pathspec 'C:\Users\hemanth.a\Desktop\Github' did not match any files
+
+C:\Users\hemanth.a>cd GitSpace
+The system cannot find the path specified.
+
+C:\Users\hemanth.a>cd C:\Users\hemanth.a\Desktop\GitSpace
+
+C:\Users\hemanth.a\Desktop\GitSpace>
+C:\Users\hemanth.a\Desktop\GitSpace>git init
+Initialized empty Git repository in C:/Users/hemanth.a/Desktop/GitSpace/.git/
+
+C:\Users\hemanth.a\Desktop\GitSpace>git add *
+
+C:\Users\hemanth.a\Desktop\GitSpace>git add *
+
+C:\Users\hemanth.a\Desktop\GitSpace>code .
+
+C:\Users\hemanth.a\Desktop\GitSpace>remote add origin https://github.com/hemanthadepu08/Prodapt-s-Website-Auto-Selenium.git
+'remote' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\hemanth.a\Desktop\GitSpace>git remote add origin https://github.com/hemanthadepu08/Prodapt-s-Website-Auto-Selenium.git
+
+C:\Users\hemanth.a\Desktop\GitSpace>git branch -M main
+
+C:\Users\hemanth.a\Desktop\GitSpace>git add .
+
+C:\Users\hemanth.a\Desktop\GitSpace>git commit -a -m "Initial commit"
+[main (root-commit) 01ccf87] Initial commit
+ 2 files changed, 136 insertions(+)
+ create mode 100644 Github use.txt
+ create mode 100644 Mongo.txt
+
+C:\Users\hemanth.a\Desktop\GitSpace>git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.86 KiB | 633.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/hemanthadepu08/Prodapt-s-Website-Auto-Selenium.git
+ * [new branch]      main -> main
+
+C:\Users\hemanth.a\Desktop\GitSpace>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\hemanth.a\Desktop\GitSpace>git add *
+
+C:\Users\hemanth.a\Desktop\GitSpace>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\hemanth.a\Desktop\GitSpace>git push origin main
+Everything up-to-date
+
+C:\Users\hemanth.a\Desktop\GitSpace>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\hemanth.a\Desktop\GitSpace>
