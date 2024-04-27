@@ -1,0 +1,70 @@
+const MongoClient = require('mongodb').MongoClient;
+
+// Replace the uri string with your MongoDB deployment's connection string.
+const uri = "mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/<database-name>?retryWrites=true&w=majority";
+
+const client = new MongoClient(uri);
+
+async function run() {
+  try {
+    const database = client.db("mydatabase");
+    const collection = database.collection("mycollection");
+
+    const document = { name: "John Doe", age: 30, email: "john.doe@example.com" };
+
+    const result = await collection.insertOne(document);
+    console.log(`Inserted document with _id: ${result.insertedId}`);
+  } finally {
+    await client.close();
+  }
+}
+
+run().catch(console.dir);
+
+
+
+
+----
+
+const MongoClient = require('mongodb').MongoClient;
+
+// Replace the uri string with your MongoDB deployment's connection string.
+const uri = "mongodb+srv://hemanth:hemanthece@cluster0.w68oaeo.mongodb.net/?retryWrites=true&w=majority";
+
+const client = new MongoClient(uri);
+
+async function run() {
+  try {
+    const database = client.db("ReactQuiz");
+    const questions = database.collection("Javaquestions");
+
+    questions.insertOne({ 
+      Language: "Java",
+      questionText: "Who invented Java Programming?",
+      options: [
+        "1. Guido van Rossum",
+        "2. James Gosling",
+        "3. Dennis Ritchie",
+        "4. Bjarne Stroustrup"
+      ],
+      answer: "2. James Gosling"
+       }, (err, result) => { });
+
+        // courses.insertMany([
+        //     { name: 'Web Design' },
+        //     { name: 'Distributed Database' },
+        //     { name: 'Artificial Intelligence' }
+        // ], (err, results) => {
+    
+        // });    
+    
+    //     questions.find().toArray((err, results) => {
+    //         console.log(results);
+    //     });
+
+  } finally {
+    await client.close();
+  }
+}
+run().catch(console.dir);
+

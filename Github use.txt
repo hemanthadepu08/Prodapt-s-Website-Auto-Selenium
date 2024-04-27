@@ -1,0 +1,66 @@
+Go to the local path where the project folder is in.
+C:\Users\hemanth.a\quiizapp>git init
+
+C:\Users\hemanth.a\quiizapp>git init
+Initialized empty Git repository in C:/Users/hemanth.a/quiizapp/.git/
+
+C:\Users\hemanth.a\quiizapp>code .
+
+C:\Users\hemanth.a\quiizapp>git remote add origin https://github.com/hemanthadepu08/quizapp.git
+
+C:\Users\hemanth.a\quiizapp>git branch -M main
+
+C:\Users\hemanth.a\quiizapp>git add .
+
+C:\Users\hemanth.a\quiizapp>git commit -a -m "Initial commit"
+[main (root-commit) baec749] Initial commit
+ Committer: Aadepu Hemanth <hemanth.a@prodapt.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+
+ 16 files changed, 18344 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 src/App.css
+ create mode 100644 src/App.test.js
+ create mode 100644 src/Components/App.js
+ create mode 100644 src/Components/Questions.js
+ create mode 100644 src/Components/Quiz.js
+ create mode 100644 src/Components/QuizQuestions.js
+ create mode 100644 src/Components/ScoreBoard.js
+ create mode 100644 src/index.css
+ create mode 100644 src/index.js
+ create mode 100644 src/logo.svg
+ create mode 100644 src/reportWebVitals.js
+ create mode 100644 src/setupTests.js
+
+C:\Users\hemanth.a\quiizapp>git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (20/20), 159.51 KiB | 6.65 MiB/s, done.
+Total 20 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/hemanthadepu08/quizapp.git
+ * [new branch]      main -> main
+
+C:\Users\hemanth.a\quiizapp>git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/Components/Questions.js
+
+
+C:\Users\hemanth.a\quiizapp>git config user.name
+
+C:\Users\hemanth.a\quiizapp>git config --global user.name hemanth
+
+C:\Users\hemanth.a\quiizapp>git config --global user.email hemanthadepu08@gmail.com
